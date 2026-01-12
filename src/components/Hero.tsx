@@ -134,7 +134,7 @@ export function Hero() {
                 window.scrollTo({ top: 0, behavior: 'smooth' })
               }}
             >
-              <span className="font-bagel text-white text-xl tracking-wider">MOJJU</span>
+              <span className="font-bagel text-white text-xl tracking-wider">SEGENPAWS</span>
             </motion.div>
 
             {/* Navigation Menu */}
