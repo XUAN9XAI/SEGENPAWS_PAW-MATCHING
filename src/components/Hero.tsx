@@ -140,34 +140,34 @@ export function Hero() {
             {/* Navigation Menu */}
             <div className="hidden md:flex items-center space-x-8">
               <a 
+                href="#hero" 
+                className="text-white hover:text-white/80 font-medium gentle-animation hover:scale-105"
+              >
+                Home
+              </a>
+              <a 
                 href="#portfolio" 
                 className="text-white hover:text-white/80 font-medium gentle-animation hover:scale-105"
               >
-                Work
-              </a>
-              <a 
-                href="#about" 
-                className="text-white hover:text-white/80 font-medium gentle-animation hover:scale-105"
-              >
-                Process
+                Care Tips
               </a>
               <a 
                 href="#services" 
                 className="text-white hover:text-white/80 font-medium gentle-animation hover:scale-105"
               >
-                Capabilities
+                Adopt
               </a>
               <a 
-                href="#team" 
+                href="#about" 
                 className="text-white hover:text-white/80 font-medium gentle-animation hover:scale-105"
               >
-                Team
+                About Us
               </a>
               <a 
                 href="#contact" 
                 className="text-white hover:text-white/80 font-medium gentle-animation hover:scale-105"
               >
-                Contact
+                Contact Us
               </a>
             </div>
 
@@ -251,39 +251,39 @@ export function Hero() {
             {/* Mobile Navigation Links */}
             <div className="flex flex-col space-y-4 text-white">
               <a 
+                href="#hero" 
+                className="mobile-menu-link px-4 py-3 hover:text-white/80 hover:bg-white/10 rounded-lg gentle-animation font-medium text-lg active:bg-white/20"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Home
+              </a>
+              <a 
                 href="#portfolio" 
                 className="mobile-menu-link px-4 py-3 hover:text-white/80 hover:bg-white/10 rounded-lg gentle-animation font-medium text-lg active:bg-white/20"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Work
-              </a>
-              <a 
-                href="#about" 
-                className="mobile-menu-link px-4 py-3 hover:text-white/80 hover:bg-white/10 rounded-lg gentle-animation font-medium text-lg active:bg-white/20"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Process
+                Care Tips
               </a>
               <a 
                 href="#services" 
                 className="mobile-menu-link px-4 py-3 hover:text-white/80 hover:bg-white/10 rounded-lg gentle-animation font-medium text-lg active:bg-white/20"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Capabilities
+                Adopt
               </a>
               <a 
-                href="#team" 
+                href="#about" 
                 className="mobile-menu-link px-4 py-3 hover:text-white/80 hover:bg-white/10 rounded-lg gentle-animation font-medium text-lg active:bg-white/20"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Team
+                About Us
               </a>
               <a 
                 href="#contact" 
                 className="mobile-menu-link px-4 py-3 hover:text-white/80 hover:bg-white/10 rounded-lg gentle-animation font-medium text-lg active:bg-white/20"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Contact
+                Contact Us
               </a>
             </div>
 
