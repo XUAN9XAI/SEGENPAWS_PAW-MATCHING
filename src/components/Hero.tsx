@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { Volume2, VolumeX, Menu, X } from 'lucide-react'
 import { useState, useRef, useEffect } from 'react'
+import heroVideo from '@/assets/hero-video.mp4'
 
 export function Hero() {
   const [isMuted, setIsMuted] = useState(true)
@@ -106,10 +107,8 @@ export function Hero() {
         muted
         loop
         playsInline
-      >
-        <source src="https://mojli.s3.us-east-2.amazonaws.com/Mojli+Website+upscaled+(12mb).webm" type="video/webm" />
-        Your browser does not support the video tag.
-      </video>
+        src={heroVideo}
+      />
 
       {/* Full-Width Navbar */}
       <motion.nav
@@ -315,9 +314,9 @@ export function Hero() {
       >
         <div className="max-w-2xl">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black leading-tight text-white">
-            <span className="block">AI FILM</span>
-            <span className="block">PRODUCTION</span>
-            <span className="block">WITHOUT LIMITS</span>
+            <span className="block">BECAUSE EVERY</span>
+            <span className="block">PAW IS A</span>
+            <span className="block">BLESSING</span>
           </h1>
         </div>
       </motion.div>
