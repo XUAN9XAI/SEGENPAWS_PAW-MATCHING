@@ -133,38 +133,38 @@ export function Hero() {
                 window.scrollTo({ top: 0, behavior: 'smooth' })
               }}
             >
-              <span className="font-bagel text-white text-xl tracking-wider">SEGENPAWS</span>
+              <span className="font-bagel text-black text-xl tracking-wider">SEGENPAWS</span>
             </motion.div>
 
             {/* Navigation Menu */}
             <div className="hidden md:flex items-center space-x-8">
               <a 
                 href="#hero" 
-                className="text-white hover:text-white/80 font-medium gentle-animation hover:scale-105"
+                className="text-black hover:text-black/70 font-medium gentle-animation hover:scale-105"
               >
                 Home
               </a>
               <a 
                 href="#portfolio" 
-                className="text-white hover:text-white/80 font-medium gentle-animation hover:scale-105"
+                className="text-black hover:text-black/70 font-medium gentle-animation hover:scale-105"
               >
                 Care Tips
               </a>
               <a 
                 href="#services" 
-                className="text-white hover:text-white/80 font-medium gentle-animation hover:scale-105"
+                className="text-black hover:text-black/70 font-medium gentle-animation hover:scale-105"
               >
                 Adopt
               </a>
               <a 
                 href="#about" 
-                className="text-white hover:text-white/80 font-medium gentle-animation hover:scale-105"
+                className="text-black hover:text-black/70 font-medium gentle-animation hover:scale-105"
               >
                 About Us
               </a>
               <a 
                 href="#contact" 
-                className="text-white hover:text-white/80 font-medium gentle-animation hover:scale-105"
+                className="text-black hover:text-black/70 font-medium gentle-animation hover:scale-105"
               >
                 Contact Us
               </a>
