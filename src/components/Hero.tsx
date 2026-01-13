@@ -118,10 +118,10 @@ export function Hero() {
         className="fixed top-0 left-0 right-0 w-full z-[110]"
       >
         <div 
-          className={`w-full px-6 sm:px-8 lg:px-12 py-4 transition-all duration-300 ease-out ${
+          className={`w-full px-6 sm:px-8 lg:px-12 py-4 transition-all duration-300 ease-out bg-white/95 backdrop-blur-xl shadow-sm ${
             isScrolled 
-              ? 'bg-black/80 backdrop-blur-xl border-b border-white/10' 
-              : 'bg-transparent'
+              ? 'shadow-md' 
+              : ''
           }`}
         >
           <div className="flex items-center justify-between">
@@ -176,14 +176,14 @@ export function Hero() {
               <div className="relative">
                 <button
                   onClick={() => setIsMuted(!isMuted)}
-                  className="glass-effect p-3 rounded-full text-white hover:bg-white/20 gentle-animation cursor-pointer"
+                  className="bg-gray-100 p-3 rounded-full text-black hover:bg-gray-200 gentle-animation cursor-pointer"
                 >
                   {isMuted ? <VolumeX className="w-4 h-4" /> : <Volume2 className="w-4 h-4" />}
                 </button>
                 
                 {/* Sound On indicator - only show when muted */}
                 {isMuted && (
-                  <div className="absolute -bottom-10 right-0 flex items-center text-white/80">
+                  <div className="absolute -bottom-10 right-0 flex items-center text-black/70">
                     <span className="whitespace-nowrap font-medium text-sm mr-2">Sound On</span>
                     <span className="text-lg">↗</span>
                   </div>
@@ -206,7 +206,7 @@ export function Hero() {
               {/* Mobile Hamburger Menu Button */}
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="md:hidden glass-effect p-3 rounded-full text-white hover:bg-white/20 active:bg-white/30 gentle-animation cursor-pointer z-[120] relative"
+                className="md:hidden bg-gray-100 p-3 rounded-full text-black hover:bg-gray-200 active:bg-gray-300 gentle-animation cursor-pointer z-[120] relative"
               >
                 {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
               </button>
