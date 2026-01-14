@@ -14,7 +14,228 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      blog_posts: {
+        Row: {
+          author: string | null
+          category: string
+          content: string
+          created_at: string
+          excerpt: string | null
+          featured_image: string | null
+          id: string
+          published: boolean | null
+          published_at: string | null
+          slug: string
+          title: string
+          updated_at: string
+        }
+        Insert: {
+          author?: string | null
+          category: string
+          content: string
+          created_at?: string
+          excerpt?: string | null
+          featured_image?: string | null
+          id?: string
+          published?: boolean | null
+          published_at?: string | null
+          slug: string
+          title: string
+          updated_at?: string
+        }
+        Update: {
+          author?: string | null
+          category?: string
+          content?: string
+          created_at?: string
+          excerpt?: string | null
+          featured_image?: string | null
+          id?: string
+          published?: boolean | null
+          published_at?: string | null
+          slug?: string
+          title?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      care_tips: {
+        Row: {
+          category: string
+          content: string
+          created_at: string
+          icon: string | null
+          id: string
+          order_index: number | null
+          pet_category: Database["public"]["Enums"]["pet_category"] | null
+          title: string
+        }
+        Insert: {
+          category: string
+          content: string
+          created_at?: string
+          icon?: string | null
+          id?: string
+          order_index?: number | null
+          pet_category?: Database["public"]["Enums"]["pet_category"] | null
+          title: string
+        }
+        Update: {
+          category?: string
+          content?: string
+          created_at?: string
+          icon?: string | null
+          id?: string
+          order_index?: number | null
+          pet_category?: Database["public"]["Enums"]["pet_category"] | null
+          title?: string
+        }
+        Relationships: []
+      }
+      contact_submissions: {
+        Row: {
+          created_at: string
+          email: string
+          id: string
+          message: string
+          name: string
+          subject: string | null
+        }
+        Insert: {
+          created_at?: string
+          email: string
+          id?: string
+          message: string
+          name: string
+          subject?: string | null
+        }
+        Update: {
+          created_at?: string
+          email?: string
+          id?: string
+          message?: string
+          name?: string
+          subject?: string | null
+        }
+        Relationships: []
+      }
+      pet_profiles: {
+        Row: {
+          budget_range: string | null
+          category: Database["public"]["Enums"]["pet_category"]
+          created_at: string
+          daily_care: string | null
+          description: string | null
+          dos_and_donts: string | null
+          health_issues: string | null
+          id: string
+          ideal_owner: string | null
+          image_url: string | null
+          name: string
+          space_needs: string | null
+          temperament: string | null
+          updated_at: string
+        }
+        Insert: {
+          budget_range?: string | null
+          category: Database["public"]["Enums"]["pet_category"]
+          created_at?: string
+          daily_care?: string | null
+          description?: string | null
+          dos_and_donts?: string | null
+          health_issues?: string | null
+          id?: string
+          ideal_owner?: string | null
+          image_url?: string | null
+          name: string
+          space_needs?: string | null
+          temperament?: string | null
+          updated_at?: string
+        }
+        Update: {
+          budget_range?: string | null
+          category?: Database["public"]["Enums"]["pet_category"]
+          created_at?: string
+          daily_care?: string | null
+          description?: string | null
+          dos_and_donts?: string | null
+          health_issues?: string | null
+          id?: string
+          ideal_owner?: string | null
+          image_url?: string | null
+          name?: string
+          space_needs?: string | null
+          temperament?: string | null
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      quiz_questions: {
+        Row: {
+          created_at: string
+          id: string
+          options: Json
+          order_index: number
+          question: string
+          question_type: Database["public"]["Enums"]["quiz_question_type"]
+          weight_mapping: Json | null
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          options: Json
+          order_index?: number
+          question: string
+          question_type?: Database["public"]["Enums"]["quiz_question_type"]
+          weight_mapping?: Json | null
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          options?: Json
+          order_index?: number
+          question?: string
+          question_type?: Database["public"]["Enums"]["quiz_question_type"]
+          weight_mapping?: Json | null
+        }
+        Relationships: []
+      }
+      quiz_results: {
+        Row: {
+          answers: Json
+          created_at: string
+          id: string
+          recommended_category:
+            | Database["public"]["Enums"]["pet_category"]
+            | null
+          recommended_pets: string[] | null
+          score_breakdown: Json | null
+          session_id: string
+        }
+        Insert: {
+          answers: Json
+          created_at?: string
+          id?: string
+          recommended_category?:
+            | Database["public"]["Enums"]["pet_category"]
+            | null
+          recommended_pets?: string[] | null
+          score_breakdown?: Json | null
+          session_id: string
+        }
+        Update: {
+          answers?: Json
+          created_at?: string
+          id?: string
+          recommended_category?:
+            | Database["public"]["Enums"]["pet_category"]
+            | null
+          recommended_pets?: string[] | null
+          score_breakdown?: Json | null
+          session_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
@@ -23,7 +244,8 @@ export type Database = {
       [_ in never]: never
     }
     Enums: {
-      [_ in never]: never
+      pet_category: "dog" | "cat" | "bird"
+      quiz_question_type: "single_choice" | "multiple_choice" | "scale"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -150,6 +372,9 @@ export type CompositeTypes<
 
 export const Constants = {
   public: {
-    Enums: {},
+    Enums: {
+      pet_category: ["dog", "cat", "bird"],
+      quiz_question_type: ["single_choice", "multiple_choice", "scale"],
+    },
   },
 } as const
