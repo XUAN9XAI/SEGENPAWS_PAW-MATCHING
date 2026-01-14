@@ -2,7 +2,6 @@
 
 ## 1.Project info
 **URL**: https://preview--segenpaws.lovable.app/
-**URL**: https://lovable.dev/projects/1169db3a-30f3-49bc-bd0b-9cda42ae0ebe
 
 ## 2.How can I edit this code?
 
