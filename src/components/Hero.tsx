@@ -145,19 +145,25 @@ export function Hero() {
                 Home
               </a>
               <a 
-                href="#portfolio" 
+                href="#care-tips" 
                 className="text-black hover:text-black/70 font-medium gentle-animation hover:scale-105"
               >
                 Care Tips
               </a>
               <a 
-                href="#services" 
+                href="#pet-categories" 
                 className="text-black hover:text-black/70 font-medium gentle-animation hover:scale-105"
               >
                 Adopt
               </a>
               <a 
-                href="#about" 
+                href="#quiz" 
+                className="text-black hover:text-black/70 font-medium gentle-animation hover:scale-105"
+              >
+                Pet Match Quiz
+              </a>
+              <a 
+                href="#why-segenpaws" 
                 className="text-black hover:text-black/70 font-medium gentle-animation hover:scale-105"
               >
                 About Us
@@ -195,12 +201,12 @@ export function Hero() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => {
-                  const contactSection = document.getElementById('contact')
-                  contactSection?.scrollIntoView({ behavior: 'smooth' })
+                  const quizSection = document.getElementById('quiz')
+                  quizSection?.scrollIntoView({ behavior: 'smooth' })
                 }}
-                className="hidden sm:block bg-red-600 backdrop-blur-sm text-white font-semibold px-6 py-3 rounded-md hover:bg-red-700 gentle-animation ml-4 cursor-pointer"
+                className="hidden sm:block bg-amber-600 backdrop-blur-sm text-white font-semibold px-6 py-3 rounded-md hover:bg-amber-700 gentle-animation ml-4 cursor-pointer"
               >
-                Book a Call
+                Find Your Pet
               </motion.button>
 
               {/* Mobile Hamburger Menu Button */}
@@ -257,21 +263,28 @@ export function Hero() {
                 Home
               </a>
               <a 
-                href="#portfolio" 
+                href="#care-tips" 
                 className="mobile-menu-link px-4 py-3 hover:text-white/80 hover:bg-white/10 rounded-lg gentle-animation font-medium text-lg active:bg-white/20"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Care Tips
               </a>
               <a 
-                href="#services" 
+                href="#pet-categories" 
                 className="mobile-menu-link px-4 py-3 hover:text-white/80 hover:bg-white/10 rounded-lg gentle-animation font-medium text-lg active:bg-white/20"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Adopt
               </a>
               <a 
-                href="#about" 
+                href="#quiz" 
+                className="mobile-menu-link px-4 py-3 hover:text-white/80 hover:bg-white/10 rounded-lg gentle-animation font-medium text-lg active:bg-white/20"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Pet Match Quiz
+              </a>
+              <a 
+                href="#why-segenpaws" 
                 className="mobile-menu-link px-4 py-3 hover:text-white/80 hover:bg-white/10 rounded-lg gentle-animation font-medium text-lg active:bg-white/20"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
@@ -291,13 +304,13 @@ export function Hero() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => {
-                const contactSection = document.getElementById('contact')
-                contactSection?.scrollIntoView({ behavior: 'smooth' })
+                const quizSection = document.getElementById('quiz')
+                quizSection?.scrollIntoView({ behavior: 'smooth' })
                 setIsMobileMenuOpen(false)
               }}
-              className="bg-red-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-red-700 active:bg-red-800 gentle-animation mt-8 cursor-pointer"
+              className="bg-amber-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-amber-700 active:bg-amber-800 gentle-animation mt-8 cursor-pointer"
             >
-              Book a Call
+              Find Your Pet
             </motion.button>
           </div>
         </div>
