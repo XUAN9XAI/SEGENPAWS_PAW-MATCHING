@@ -4,11 +4,7 @@ import { motion } from 'framer-motion'
 import { Heart, Home, Clock, DollarSign, Sparkles, ArrowRight } from 'lucide-react'
 import { Button } from './ui/button'
 
-interface PetMatchQuizProps {
-  onStartQuiz?: () => void
-}
-
-export function PetMatchQuiz({ onStartQuiz }: PetMatchQuizProps) {
+export function PetMatchQuiz() {
   const factors = [
     {
       icon: Home,
@@ -114,7 +110,6 @@ export function PetMatchQuiz({ onStartQuiz }: PetMatchQuizProps) {
         >
           <Button
             size="lg"
-            onClick={onStartQuiz}
             className="bg-amber-600 hover:bg-amber-700 text-white text-lg px-10 py-6 rounded-full shadow-lg hover:shadow-xl transition-all group"
           >
             Start the Quiz
