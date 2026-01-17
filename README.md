@@ -2,13 +2,13 @@
 
 ## 1.Project info
 
-**URL**: https://lovable.dev/projects/1169db3a-30f3-49bc-bd0b-9cda42ae0ebe
+**URL**: https://segenpaws.lovable.app
 
 ## 2.How can I edit this code?
 
 There are several ways of editing your application.
 
-a.Simply visit the [Lovable Project](https://lovable.dev/projects/1169db3a-30f3-49bc-bd0b-9cda42ae0ebe) and start prompting.
+a.Simply visit https://segenpaws.lovable.app and start prompting.
 
 Changes made via Lovable will be committed automatically to this repo.
 
@@ -60,7 +60,7 @@ This project is built with:
 
 ## 6.How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/1169db3a-30f3-49bc-bd0b-9cda42ae0ebe) and click on Share -> Publish.
+Simply open  https://segenpaws.lovable.app and click on Share -> Publish.
 
 ## 7.Can I connect a custom domain to my Lovable project?
 
