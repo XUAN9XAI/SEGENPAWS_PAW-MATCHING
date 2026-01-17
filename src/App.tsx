@@ -1,39 +1,24 @@
-import { Hero } from './components/Hero'
-import { PetMatchQuiz } from './components/PetMatchQuiz'
-import { Features } from './components/Features'
-import { WhySegenpaws } from './components/WhySegenpaws'
-import { PetCategories } from './components/PetCategories'
-import { CareTipsSection } from './components/CareTipsSection'
-import { Contact } from './components/Contact'
-import { Footer } from './components/Footer'
+import { Routes, Route } from 'react-router-dom'
+import { Toaster } from './components/ui/sonner'
+import HomePage from './pages/HomePage'
+import QuizPage from './pages/QuizPage'
+import BlogPage from './pages/BlogPage'
+import BlogPostPage from './pages/BlogPostPage'
+import PetProfilePage from './pages/PetProfilePage'
+import NotFound from './pages/NotFound'
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-background text-foreground" style={{ overflow: 'visible' }}>
-      <main className="relative" role="main" style={{ overflow: 'visible' }}>
-        <section id="hero" aria-label="Hero section">
-          <Hero />
-        </section>
-        <section id="quiz" aria-label="Pet Match Quiz section">
-          <PetMatchQuiz />
-        </section>
-        <section id="features" aria-label="Features section">
-          <Features />
-        </section>
-        <section id="why-segenpaws" aria-label="Why SEGENPAWS section">
-          <WhySegenpaws />
-        </section>
-        <section id="pet-categories" aria-label="Pet Categories section">
-          <PetCategories />
-        </section>
-        <section id="care-tips" aria-label="Care Tips section">
-          <CareTipsSection />
-        </section>
-        <section id="contact" aria-label="Contact section">
-          <Contact />
-        </section>
-      </main>
-      <Footer />
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/quiz" element={<QuizPage />} />
+        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/blog/:slug" element={<BlogPostPage />} />
+        <Route path="/pets/:category" element={<PetProfilePage />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+      <Toaster />
+    </>
   )
 }

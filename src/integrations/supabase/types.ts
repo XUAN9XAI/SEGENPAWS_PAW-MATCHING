@@ -170,6 +170,39 @@ export type Database = {
         }
         Relationships: []
       }
+      profiles: {
+        Row: {
+          avatar_url: string | null
+          bookmarked_articles: string[] | null
+          created_at: string
+          display_name: string | null
+          favorite_pets: string[] | null
+          id: string
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          avatar_url?: string | null
+          bookmarked_articles?: string[] | null
+          created_at?: string
+          display_name?: string | null
+          favorite_pets?: string[] | null
+          id?: string
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          avatar_url?: string | null
+          bookmarked_articles?: string[] | null
+          created_at?: string
+          display_name?: string | null
+          favorite_pets?: string[] | null
+          id?: string
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
       quiz_questions: {
         Row: {
           created_at: string
@@ -211,6 +244,7 @@ export type Database = {
           recommended_pets: string[] | null
           score_breakdown: Json | null
           session_id: string
+          user_id: string | null
         }
         Insert: {
           answers: Json
@@ -222,6 +256,7 @@ export type Database = {
           recommended_pets?: string[] | null
           score_breakdown?: Json | null
           session_id: string
+          user_id?: string | null
         }
         Update: {
           answers?: Json
@@ -233,6 +268,7 @@ export type Database = {
           recommended_pets?: string[] | null
           score_breakdown?: Json | null
           session_id?: string
+          user_id?: string | null
         }
         Relationships: []
       }
