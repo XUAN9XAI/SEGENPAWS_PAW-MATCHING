@@ -108,13 +108,15 @@ export function PetMatchQuiz() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="text-center"
         >
-          <Button
-            size="lg"
-            className="bg-amber-600 hover:bg-amber-700 text-white text-lg px-10 py-6 rounded-full shadow-lg hover:shadow-xl transition-all group"
-          >
-            Start the Quiz
-            <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </Button>
+          <a href="/quiz">
+            <Button
+              size="lg"
+              className="bg-amber-600 hover:bg-amber-700 text-white text-lg px-10 py-6 rounded-full shadow-lg hover:shadow-xl transition-all group"
+            >
+              Start the Quiz
+              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </Button>
+          </a>
           <p className="text-sm text-gray-500 mt-4">
             Takes about 3 minutes • 100% free
           </p>
