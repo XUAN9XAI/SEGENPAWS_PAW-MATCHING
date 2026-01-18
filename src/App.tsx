@@ -5,6 +5,7 @@ import QuizPage from './pages/QuizPage'
 import BlogPage from './pages/BlogPage'
 import BlogPostPage from './pages/BlogPostPage'
 import PetProfilePage from './pages/PetProfilePage'
+import AdoptionResourcesPage from './pages/AdoptionResourcesPage'
 import NotFound from './pages/NotFound'
 
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/blog/:slug" element={<BlogPostPage />} />
         <Route path="/pets/:category" element={<PetProfilePage />} />
+        <Route path="/adoption" element={<AdoptionResourcesPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Toaster />

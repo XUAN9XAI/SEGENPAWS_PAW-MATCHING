@@ -4,7 +4,7 @@ import { Features } from '@/components/Features'
 import { WhySegenpaws } from '@/components/WhySegenpaws'
 import { PetCategories } from '@/components/PetCategories'
 import { CareTipsSection } from '@/components/CareTipsSection'
-import { Contact } from '@/components/Contact'
+import { ContactForm } from '@/components/ContactForm'
 import { Footer } from '@/components/Footer'
 
 export default function HomePage() {
@@ -30,7 +30,7 @@ export default function HomePage() {
           <CareTipsSection />
         </section>
         <section id="contact" aria-label="Contact section">
-          <Contact />
+          <ContactForm />
         </section>
       </main>
       <Footer />
